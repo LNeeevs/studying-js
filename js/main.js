@@ -63,14 +63,12 @@ function limpar(){
 }
 
 /*CASE STATMENT - WITH FUNCTIONS AND ARRAY*/
-var analise9 = ["Pêra", "Uva", "Maça", 120];
-var i = 0;
-var resultadoGerado = [];
-
 function funcaoFor(){
+    var analise9 = ["Pêra", "Uva", "Maça", 120];
+    var text = [];
+
     for(i=0;i<analise9.length;i++){
-        resultadoGerado[i] = analise9[i];
+        text[i] = analise9[i];
     }
-    alert(resultadoGerado[2]);
-    document.getElementById("resultado6").innerHTML = resultadoGerado;
+    document.getElementById("resultado6").innerHTML = text;
 }
