@@ -23,5 +23,41 @@ if(analise3 === "João" && analise4 == "20 anos"){
     document.getElementById("resultado3").innerHTML = "Nome e idade corretos!";
 }
 else{
-    document.getElementById("resultado3").innerHTML = "Nome e idade não convergem..."
+    document.getElementById("resultado3").innerHTML = "Nome e idade não convergem...";
+}
+
+/*CASE STATMENT*/
+var analise5 = "Lucas";
+var analise6 = "Está estudando JS";
+var analise7 = "Está estudando CSS";
+
+switch(analise5){
+    case "Lucas":
+        document.getElementById("resultado4").innerHTML = "O nome é " + analise5;
+        break;
+    case "João":
+        document.getElementById("resultado4").innerHTML = "TESTE2";
+        break;
+    default:
+        document.getElementById("resultado4").innerHTML = "SEM TESTES";
+}
+
+/*CASE STATMENT - WITH FUNCTIONS*/
+var analise8 = ["Lucas","Neves"];
+
+function funcaoCase(){
+    switch(analise8[0]){
+        case "Luciano":
+            document.getElementById("resultado5").innerHTML = "Errou o nome, seria este - " + analise8[1];
+            break;
+        case "Lucas":
+            document.getElementById("resultado5").innerHTML = "Acertou o nome! É " + analise8[0] + " " + analise8[1];
+            break;
+        default:
+            document.getElementById("resultado5").innerHTML = "Não deu certo essa parte...";
+    }
+}
+
+function limpar(){
+    document.getElementById("resultado5").innerHTML = "";
 }

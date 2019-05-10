@@ -11,29 +11,42 @@
 </head>
 
 <style>
-    .container-fluid{
-        padding: 30px 20px;
-    }
+    
 </style>
 
 <body>
     <div class="section">
         <div class="container-fluid bg-color">
-            <h1>Studying JS</h1>
-            <br>
-            <h4>Let's go to study a little bit about JS</h4>
-            <p id="textoA"></p>
-            <p id="textoB"></p>
-            <br>
-            <h4>Now we gonna see more about the IF statments:</h4>
-            <h5>An example about IF statments: DIRECT MODE</h5>
-            <p id="resultado1"></p>
-            <br>
-            <h5>An example about IF statments: INLINE MODE</h5>
-            <p id="resultado2"></p>
-            <br>
-            <h5>An example about IF statments: COMMON MODE</h5>
-            <p id="resultado3"></p>
+            <div class="container padcontainer">
+                <h1>Studying JS</h1>
+            </div>
+            
+            <div class="container">
+                <h4>Let's go to study a little bit about JS</h4>
+                <p id="textoA"></p>
+                <p id="textoB"></p>
+                <br>
+                <h4>Now we gonna see more about the IF statments:</h4>
+                <h5>An example about IF statments: DIRECT MODE</h5>
+                <p id="resultado1"></p>
+                <br>
+                <h5>An example about IF statments: INLINE MODE</h5>
+                <p id="resultado2"></p>
+                <br>
+                <h5>An example about IF statments: COMMON MODE</h5>
+                <p id="resultado3"></p>
+            </div>
+            
+            <div class="container">
+                <h4>Now we gonna see more about the CASE statments:</h4>
+                <h5>An example about CASE: NORMAL</h5>
+                <p id="resultado4"></p>
+                <br>
+                <h5>An example about CASE using functions:</h5>
+                <button class="btn btn-primary" id="botao-case" onclick="funcaoCase()">Case com funções</button>
+                <button class="btn btn-warning" id="botao-case2" onclick="limpar()">Limpar</button>
+                <p>O resultado 5 é igual a: <span id="resultado5"></span></p>
+            </div>
         </div>
     </div>
 </body>
